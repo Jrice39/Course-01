@@ -5,6 +5,9 @@ Mobile view should appear only if the width of the browser is equal to or less t
 body{
     background-color: royalblue;
 }
+div{
+  padding: 5px;
+}
 
 /*width of the browser window is 992px and above.
 @media (min-width: 992px){
@@ -40,7 +43,7 @@ body{
     height: 150px;
     font-family: Helvetica;
     color: white;
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
     clear: right;
     position: relative;
   }
@@ -50,19 +53,17 @@ body{
     border: 1px black;
     background-color: aquamarine;
     padding: 5px;
-    float: right;
-    position: relative;
-    top: 10x;
-    right: 100x;
-    margin-bottom: 10px;
-    border: 1px solid yellow;
+    /* float: right; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
   
   /* Simple Responsive Framework. */
   .row {
     width: 100%;
-    /*margin-right: auto;
-      margin-left: auto;*/
+    margin-right: auto;
+      margin-left: auto;
   }
   
   /********** Large devices only **********/
@@ -89,7 +90,7 @@ body{
   @media (min-width: 768px) and (max-width: 991px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
       float: left;
-      border: 1px solid green;
+      border: 1px solid rgb(128, 124, 0);
       margin-right: auto;
       margin-left: auto;
       }
@@ -112,7 +113,7 @@ body{
       background-color: blue;
       margin-right: auto;
       margin-left: auto;
-       }
+    }
     .col-sm-01{
       width: 33.33%;
     }
@@ -123,6 +124,3 @@ body{
       width: 100%;
     }
   }
-
-
-  
